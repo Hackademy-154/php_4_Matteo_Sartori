@@ -43,15 +43,19 @@ class Rettangolo{
         $this->Base=$b;
         $this->Altezza=$a;
     }
+
     public function Area(){
         return "L'Area del rettangolo è: " . $this->mul($this->Base,$this->Altezza);
     }
+
     public function Perimetro(){
         return "\nIl Perimetro del rettangolo è: " . $this->sum($this->mul(2,$this->Base),$this->mul(2,$this->Altezza));
     }
+
     public function Diagonale(){
         return "\nLa Diagonale del rettangolo è: " . $this->sqr($this->sum($this->mul($this->Altezza,$this->Altezza),$this->mul($this->Base,$this->Base)));
     }
+    
 }
 
 $Rettangolo= new Rettangolo(10,20);
